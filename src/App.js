@@ -7,7 +7,6 @@ import '@elastic/eui/dist/eui_theme_light.css';
 
 const rightSideItems = [
   <Link to='/'><EuiLink>Home</EuiLink></Link>,
-  <Link to='/schedule'><EuiLink>Schedule</EuiLink></Link>
 ]
 
 function App() {
