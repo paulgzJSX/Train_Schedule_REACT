@@ -6,6 +6,8 @@ export const getTrains = year => {
             return years._1980
         case '1981/1982':
             return years._1981
+        case '1983/1984':
+            return years._1983_1984
         case '1989/1990':
             return years._1989_1990
         case '1999/2000':
