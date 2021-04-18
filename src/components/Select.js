@@ -19,6 +19,7 @@ const Select = ({ setYear, setTrainNumber, year }) => {
             <EuiFlexGroup alignItems='center' justifyContent='flexStart'>
                 {['Годы', 'Направление'].map(title =>
                     <SelectDropdown
+                        key={title}
                         title={title}
                         options={title === 'Годы' ? yearOptions : routeOptions}
                         handleChange={title === 'Годы' ? handleYearChange : handleRouteChange}

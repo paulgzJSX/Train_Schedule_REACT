@@ -1,4 +1,4 @@
-export { default as PDF } from './PDF'
+export { default as PDFDoc } from './PDF'
 export { default as Select } from './Select'
 export { default as SelectDropdown } from './SelectDropdown'
 export { default as Table } from './Table'

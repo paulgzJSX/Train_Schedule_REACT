@@ -18,3 +18,9 @@ export const getTrains = year => {
 }
 
 export const getFirstTrain = trains => trains.sort((a, b) => a.number - b.number)[0].number
+
+export const displayStops = train => (
+    train.type === 'outbound'
+        ? [...train.stations].reverse()
+        : train.stations
+)

@@ -1,4 +1,5 @@
 import { EuiBasicTable } from '@elastic/eui';
+import { displayStops } from '../helpers/defineTrainsByYear'
 
 const columns = [
     { field: 'station', name: 'Станция' },
@@ -9,7 +10,7 @@ const columns = [
 const Table = ({ train }) => {
     return (
         <EuiBasicTable
-            items={train.type === 'outbound' ? [...train.stations].reverse() : train.stations}
+            items={displayStops(train)}
             rowHeader="station"
             columns={columns}
         />
